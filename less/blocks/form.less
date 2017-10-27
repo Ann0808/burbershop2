@@ -1,0 +1,139 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+
+.form {
+    .container();
+    border: 1px solid white;
+    min-height: 100px;
+}
+
+.form__wrapper {
+    border: 1px solid #876222;
+    padding-bottom: 38px;
+    padding-top: 30px;
+}
+
+.form__data-block {
+    margin-bottom: 46px;
+}
+
+.form__data-block--small {
+    margin-bottom: 32px;
+}
+
+.form__person-data, 
+.form__contact-data{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7px;
+    padding: 15px 18px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form__data-block textarea {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-left: 18px;
+}
+
+.form__beard-model {
+    box-sizing: content-box;
+    width: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.form__extra {
+    box-sizing: content-box;
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+} 
+
+.form__btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+
+@media @tablet-width {
+    .form__wrapper {
+        padding-top: 100px;
+        padding-bottom: 76px;
+        position: relative;
+    }
+    
+    .form__data-block {
+        margin-bottom: 56px;
+    }
+    
+    .form__data-block--small {
+        margin-bottom: 34px;
+        font-size: 0;
+        text-align: center;
+    }
+    
+    .form__person-data {
+        margin-bottom: 0;
+        display: inline-block;
+        width: 33%;
+        padding: 25px;
+    }
+    
+    .form__contact-data {
+        padding: 25px;
+    }
+    
+    .form__data-block textarea {
+        padding: 25px;
+    }
+    
+    .form__extra {
+        display: inline-block;
+    }
+    
+    .form__btn {
+        padding: 20px 0;
+    }
+}
+
+@media @desktop-width {
+    
+    .form__wrapper {
+        padding-top: 126px;
+        padding-bottom: 87px;
+        position: relative;
+    }
+    
+    .form__data-block {
+        margin-bottom: 70px;
+    }
+    
+    .form__person-data {
+        width: 30.5%;
+        margin-right: 38px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    
+    .form__contact-data {
+        display: inline-block;
+        margin-right: 38px;
+        width: 48%;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    
+    
+    
+    
+    
+}

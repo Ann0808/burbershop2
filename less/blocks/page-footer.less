@@ -1,0 +1,122 @@
+@import "../variables.less";
+@import "../mixins.less";
+
+.page-footer__wrapper {
+    .container();
+    padding-top: 35px; 
+    border: 1px solid red; /*greed*/
+}
+
+.page-footer__contacts {
+    border: 1px solid white; /*greed*/
+    padding-top: 37px;
+    padding-bottom: 97px;
+    padding-right: 55px;
+    padding-left: 55px;
+    position: relative;
+}
+
+.page-footer__social-items {
+    display: block;
+    border: 1px solid blue; /*greed*/
+    font-size: 0px;
+}
+
+.page-footer__social-item {
+    border: 1px solid green; /*greed*/
+    margin: 0;
+    width:33%;
+    display: inline-block;  
+    min-height: 100px; /*greed*/
+}
+
+.page-footer__social-text {
+    display: none;
+}
+
+.page-footer__copyright {
+    border: 1px solid red; /*greed*/
+    padding-top: 35px;
+    padding-bottom: 85px;
+}
+
+@media @tablet-width {
+    
+    .page-footer__wrapper {
+        .container();
+        min-height: 348px; /*greed*/
+        padding-top: 50px; 
+        padding-bottom: 50px;
+        position: relative;
+
+    }
+    
+    .page-footer__contacts {
+        min-height: 87px; /*greed*/
+        margin-right: 200px;
+        margin-bottom: 50px;
+        padding: 0;
+        position: static;
+    }
+    
+    .page-footer__copyright {
+     
+        position: absolute;
+        top:50px;
+        right: 0px;
+        width: 160px;
+        padding:0;
+    }
+    
+}
+
+@media @desktop-width {
+    
+    .page-footer__wrapper {
+        min-height: 200px; /*greed*/
+        padding-bottom: 58px;
+        position: static;
+    }
+    
+    .page-footer__contacts {
+        margin: 0;
+        float: left;
+        width: 320px; /*??*/
+    }
+    
+    .page-footer__social-items {
+         margin: 0;
+        float: left;
+
+    }
+    
+     .page-footer__social-text {
+       display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        font-size: 15px;/*time*/
+        color:white;
+         text-align: center;
+       
+    }
+   
+    .page-footer__social-item {
+        min-height: 50px; /*greed*/
+        width: 55px;
+        margin-right: 5px;
+    }
+    
+    .page-footer__social-item:last-child {
+        margin: 0;
+    }
+    
+    .page-footer__copyright {
+        position: static;
+        float: right;
+        margin: 0;
+        width: 100px;
+    }
+    
+    
+}
+
